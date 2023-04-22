@@ -1,4 +1,4 @@
-# Natural-Language-Processing-with-Disaster-Tweets
+# Natural Language Processing with Disaster Tweets
 
 This [Kaggle project](https://www.kaggle.com/competitions/nlp-getting-started/overview) aims to build a machine learning model to predict which tweets are about real disasters and which ones are not. The dataset consists of 10,000 tweets that were hand classified. The challenge is to create a model that can distinguish between real disaster tweets and those that are not, despite the use of metaphorical language or potentially offensive content.
 
@@ -46,7 +46,7 @@ This project uses a Logistic Regression model with TfidfVectorizer for feature e
 
 The Logistic Regression model, combined with the TfidfVectorizer, achieved an F1 score of 0.78516. This performance indicates that the model is reasonably effective at predicting whether a tweet is about a real disaster or not. Further improvements could potentially be made by exploring more advanced natural language processing techniques or using more complex machine learning models.
 
-## How to run the code
+## Execution
 
 1. Install the required libraries:
    - pandas
