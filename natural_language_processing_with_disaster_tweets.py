@@ -43,3 +43,6 @@ f1 = f1_score(y_val, y_val_pred)
 print("Accuracy:", accuracy)
 print("F1 score:", f1)
 
+X_test = test["combined_text"]
+X_test_tfidf = vectorizer.transform(X_test)
+test_preds = model.predict(X_test_tfidf)
