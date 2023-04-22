@@ -37,3 +37,9 @@ X_val_tfidf = vectorizer.transform(X_val)
 model = LogisticRegression()
 model.fit(X_train_tfidf, y_train)
 
+y_val_pred = model.predict(X_val_tfidf)
+accuracy = accuracy_score(y_val, y_val_pred)
+f1 = f1_score(y_val, y_val_pred)
+print("Accuracy:", accuracy)
+print("F1 score:", f1)
+
