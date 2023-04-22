@@ -29,3 +29,11 @@ X = train["combined_text"]
 y = train["target"]
 
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+
+vectorizer = TfidfVectorizer()
+X_train_tfidf = vectorizer.fit_transform(X_train)
+X_val_tfidf = vectorizer.transform(X_val)
+
+model = LogisticRegression()
+model.fit(X_train_tfidf, y_train)
+
