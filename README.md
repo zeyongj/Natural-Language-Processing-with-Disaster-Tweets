@@ -1,6 +1,6 @@
 # Natural-Language-Processing-with-Disaster-Tweets
 
-This [Kaggle project](url: https://www.kaggle.com/competitions/nlp-getting-started/overview) aims to build a machine learning model to predict which tweets are about real disasters and which ones are not. The dataset consists of 10,000 tweets that were hand classified. The challenge is to create a model that can distinguish between real disaster tweets and those that are not, despite the use of metaphorical language or potentially offensive content.
+This [Kaggle project](https://www.kaggle.com/competitions/nlp-getting-started/overview) aims to build a machine learning model to predict which tweets are about real disasters and which ones are not. The dataset consists of 10,000 tweets that were hand classified. The challenge is to create a model that can distinguish between real disaster tweets and those that are not, despite the use of metaphorical language or potentially offensive content.
 
 ## Competition Description
 
