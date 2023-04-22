@@ -43,9 +43,11 @@ f1 = f1_score(y_val, y_val_pred)
 print("Accuracy:", accuracy)
 print("F1 score:", f1)
 
+# Make predictions on the test set
 X_test = test["combined_text"]
 X_test_tfidf = vectorizer.transform(X_test)
 test_preds = model.predict(X_test_tfidf)
 
+# Save the predictions in the required format
 submission = pd.DataFrame({"id": test["id"], "target": test_preds})
 submission.to_csv("submission.csv", index=False)
