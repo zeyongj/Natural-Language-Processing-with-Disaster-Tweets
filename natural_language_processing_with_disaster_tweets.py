@@ -24,3 +24,8 @@ test["keyword"] = test["keyword"].fillna("").apply(preprocess_text)
 
 train["combined_text"] = train["keyword"] + " " + train["text"]
 test["combined_text"] = test["keyword"] + " " + test["text"]
+
+X = train["combined_text"]
+y = train["target"]
+
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
